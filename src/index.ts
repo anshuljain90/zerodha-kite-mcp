@@ -26,12 +26,12 @@ class ZerodhaKiteMCPServer {
   private server: Server;
   private kite: KiteConnect | null = null;
   private apiKey: string;
-  private apiSecret: string;
   private accessToken: string | null = null;
 
   constructor() {
     this.apiKey = process.env.KITE_API_KEY || '';
-    this.apiSecret = process.env.KITE_API_SECRET || '';
+    // API Secret would be used for session generation in production
+    // const apiSecret = process.env.KITE_API_SECRET || '';
     this.accessToken = process.env.KITE_ACCESS_TOKEN || null;
 
     this.server = new Server(
