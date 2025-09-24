@@ -37,7 +37,7 @@ class ZerodhaKiteMCPServer {
     this.server = new Server(
       {
         name: 'zerodha-kite-mcp',
-        version: '1.0.0',
+        version: '0.1.0',
       },
       {
         capabilities: {

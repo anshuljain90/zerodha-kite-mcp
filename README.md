@@ -1,5 +1,9 @@
 # Zerodha Kite Connect MCP Server
 
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/anshuljain90/zerodha-kite-mcp/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-purple.svg)](https://modelcontextprotocol.com)
+
 An MCP (Model Context Protocol) server for integrating Zerodha's Kite Connect API with AI assistants like Claude. This server enables AI assistants to execute trades, manage portfolios, and access real-time market data from Indian stock exchanges.
 
 ## Features
@@ -24,7 +28,9 @@ An MCP (Model Context Protocol) server for integrating Zerodha's Kite Connect AP
 ### Using Docker (Recommended)
 
 ```bash
-docker pull mcp/zerodha-kite
+docker pull mcp/zerodha-kite:0.1.0
+# or use latest
+docker pull mcp/zerodha-kite:latest
 ```
 
 ### From Source
@@ -173,6 +179,12 @@ To build the Docker image locally:
 ```bash
 docker build -t zerodha-kite-mcp .
 ```
+
+## Release Information
+
+- **Current Version**: 0.1.0
+- **Release Date**: 2025-01-24
+- **Changelog**: See [CHANGELOG.md](CHANGELOG.md) for detailed release notes
 
 ## Contributing
 
